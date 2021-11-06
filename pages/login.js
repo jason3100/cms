@@ -10,10 +10,11 @@ export default function Login() {
 
     return (
       <div className = 'main'>
-
+        {/* add title */}
         <h1 className = 'title'>Course Management Assistant</h1>
 
-        <Form.Item rules={[{ required: true }]}>
+        {/* add radio button for user type */}
+        <Form.Item>
             <Radio.Group>
               <Radio.Button value="student">Student</Radio.Button>
               <Radio.Button value="teacher">Teacher</Radio.Button>
@@ -21,6 +22,7 @@ export default function Login() {
             </Radio.Group>
         </Form.Item>
 
+        {/* username & password */}
         <Form
         name="normal_login"
         className="login-form"
@@ -56,6 +58,7 @@ export default function Login() {
             placeholder="Please input password"
           />
 
+        {/* default remember */}
         </Form.Item>
         <Form.Item>
           <Form.Item name="remember" valuePropName="checked" noStyle>
@@ -63,6 +66,7 @@ export default function Login() {
           </Form.Item>
         </Form.Item>
 
+        {/* sign in button */}
         <Form.Item>
           <Button type="primary" htmlType="submit" className="login-form-button">
             Sign in
@@ -72,9 +76,7 @@ export default function Login() {
           No account? <a href="">Sign up</a>
         </Form.Item>
       </Form>
-      </div>
-      
+      </div> 
     )
-
 }
 
