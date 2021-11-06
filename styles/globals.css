@@ -14,3 +14,30 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.main {
+  width: 33%;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-forgot {
+  float: left;
+}
+
+.login-form-button {
+  width: 100%;
+}
